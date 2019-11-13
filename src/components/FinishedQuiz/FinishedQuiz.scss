@@ -1,0 +1,36 @@
+.FinishedQuiz {
+  padding: 20px;
+  color: #040404;
+  border: 2px solid #fff;
+  background: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0 10px;
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  & ul li i {
+    margin-left: 10px;
+  }
+}
+
+i.fa.fa-check.success {
+  color: #6bef64;
+}
+
+i.fa.fa-times.error {
+  color: #ff7373;
+}
+
+button.Retry {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: #e6e6e6;
+  font-size: 14px;
+}
+
