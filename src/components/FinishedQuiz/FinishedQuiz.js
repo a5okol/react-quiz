@@ -1,5 +1,6 @@
 import React from 'react'
 import './FinishedQuiz.scss'
+import Button from '../../components/UI/Button/Button'
 
 const FinishedQuiz = props => {
 
@@ -22,9 +23,9 @@ const FinishedQuiz = props => {
 
                    return (
                        <li key={index}>
-                           <strong>{index + 1}</strong>. &nbsp;
+                           <strong>{index + 1}</strong>.&nbsp;
                            {quizItem.question}
-                           <i className={cls.join(' ')}/>
+                           <i className={cls.join(' ')} />
                        </li>
                    )
 
@@ -33,7 +34,8 @@ const FinishedQuiz = props => {
             <p>Правильно {successCount} из {props.quiz.length}</p>
 
             <div>
-                <button onClick={props.onRetry} className={'Retry'}>Повторить</button>
+                <Button onClick={props.onRetry} type="primaryBut">Повторить</Button>
+                <Button type="successBut">Перейти в список тестов</Button>
             </div>
         </div>
     )
