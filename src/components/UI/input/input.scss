@@ -1,0 +1,34 @@
+.Input {
+  margin-bottom: 15px;
+  margin-top: 10px;
+
+  & label {
+    margin-bottom: 6px;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+  }
+  & input {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    margin: 0 0 5px;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+    transition: all 300ms ease-in-out;
+  }
+
+  & span {
+    color: #f01f30;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &.invalid label {
+    color: #f01f30;
+  }
+}
+
+
