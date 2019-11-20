@@ -1,9 +1,8 @@
 import React from 'react'
 import './input.scss'
 
-function isInvalid(valid, touched, shouldValidate) {
-    return !valid && shouldValidate && touched
-
+function isInvalid({valid, touched, shouldValidate}) { // сюда передаем параметры props
+    return !valid && shouldValidate && touched // Проверяем: если "не валидированный контрол" И "не должены его валедироват" И "если его уже потрогали", то значит информация не валидна
 }
 
 const Input = props => {
@@ -17,7 +16,7 @@ const Input = props => {
 
     return (
         <div className={cls.join(' ')}>
-            <label htmlFor="">{props.label}</label>
+            <label htmlFor={htmlFor}>{props.label}</label>
             <input
                 type={inputType}
                 id={htmlFor}
@@ -29,7 +28,6 @@ const Input = props => {
                 isInvalid(props)
                     ? <span>{props.errorMessage || 'Введите верное значение'}</span>
                     : null
-
             }
 
         </div>
