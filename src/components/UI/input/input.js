@@ -2,7 +2,7 @@ import React from 'react'
 import './input.scss'
 
 function isInvalid({valid, touched, shouldValidate}) { // сюда передаем параметры props
-    return !valid && shouldValidate && touched // Проверяем: если "не валидированный контрол" И "не должены его валедироват" И "если его уже потрогали", то значит информация не валидна
+    return !valid && shouldValidate && touched // Проверяем: если "не валидированный контрол" И "не должены его валедироват" И "не трогался", то значит информация не валидна
 }
 
 const Input = props => {
