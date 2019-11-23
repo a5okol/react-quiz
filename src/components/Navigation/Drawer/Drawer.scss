@@ -2,10 +2,10 @@
   position: fixed;
   left: 0;
   top: 0;
-  bottom:0;
+  bottom: 0;
   width: 80%;
   max-width: 300px;
-  padding: 20px 10px;
+  padding: 40px 10px;
   box-sizing: border-box;
   background: #fff;
   transform: translateX(0px);
@@ -17,26 +17,26 @@
   }
 
   & ul {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-   }
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
   & ul li {
     margin-bottom: 15px;
   }
 
   & ul li a {
-     font-size: 30px;
-     text-decoration: none;
-     color: #2884f6;
-     background-color: #fff;
-     position: relative;
-     padding: 0 20px 10px 20px;
-     transition: opacity .3s;
+    font-size: 27px;
+    text-decoration: none;
+    color: #3e3e3e;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 20px 5px 20px;
+    transition: opacity .3s;
 
     &:hover {
-      opacity: .7;
+      opacity: .6;
     }
-   }
+  }
 
 }
