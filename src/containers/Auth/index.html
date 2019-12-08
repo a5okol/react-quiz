@@ -1,0 +1,24 @@
+<p>Этапы настройки Redux</p>
+<xmp class="codetext">
+    import React, {Component} from 'react'
+    import {connect} from 'react-redux'
+    import {logout} from "../../store/actions/auth-action";
+
+    class Logout extends Component {
+
+    }
+
+    function mapDispatchToProps(dispatch) {
+        return{
+            logout: () => dispatch(logout())
+        }
+    }
+
+    export default connect(null, mapDispatchToProps)()
+</xmp>
+
+
+Билдим проект yarn run build
+
+
+sudo npm install -g firebase-tools
